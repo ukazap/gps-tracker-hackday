@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  gps-tracker:
+    container_name: gps-tracker
+    restart: always
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./log:/app/log
